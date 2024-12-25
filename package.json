@@ -1,0 +1,23 @@
+{
+  "name": "my-first-extension",
+  "displayName": "My First Extension",
+  "description": "A simple hello world extension.",
+  "version": "0.0.1",
+  "publisher": "your-username",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "main": "./extension.js",  
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Say Hello"
+      }
+    ]
+  },
+  "dependencies": {}
+}
